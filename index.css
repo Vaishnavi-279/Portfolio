@@ -1,0 +1,220 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  color: rgb(84, 2, 161);
+  line-height: 2;
+  background-color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  height: 45px;
+  width: auto;
+  background-color: aliceblue;
+}
+
+.nav_links {
+  flex: 1;
+  text-align: right;
+  margin-right: 180px;
+}
+
+.nav_links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 20px;
+  position: relative;
+}
+
+.nav_links ul li a {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: rgb(84, 2, 161);
+}
+
+.nav_links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: rgb(252, 177, 123);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav_links ul li:hover::after {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 160px;
+  text-align: left;
+  color: rgb(84, 2, 161);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#name {
+  font-size: xx-large;
+}
+
+#intro {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+#resume {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 12px 12px;
+  border-radius: 10px;
+  background-color: rgb(100, 31, 164);
+  transition: 0.5s;
+}
+
+#resume:hover {
+  background-color: rgb(252, 177, 123);
+  color: rgb(100, 31, 164);
+}
+
+#photo {
+  margin-top: 50px;
+  border-color: rgb(61, 0, 117);
+  border: 1px solid;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 180px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin: 160px; */
+  text-align: left;
+  color: rgb(84, 2, 161);
+  font-size: xx-large;
+  transition: background-color 0.3s ease;
+}
+
+.left {
+  font-size: 18px;
+  width: 50%;
+  margin: 160px;
+}
+
+.right {
+  font-size: 18px;
+  width: 50%;
+  margin-left: 15px;
+}
+
+#courses {
+  text-align: justify;
+  float: left;
+  width: 50%;
+  text-align: left;
+  margin: 150px 5px;
+  padding: 5px 5px;
+  transition: 0.5s;
+}
+
+#description {
+  margin: 20px;
+}
+
+.projects {
+  margin: 160px;
+  font-size: xx-large;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.column a {
+  text-decoration: none;
+}
+
+.column a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: rgb(252, 177, 123);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.column a:hover::after {
+  width: 30%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#project_photos {
+  height: 200px;
+  width: 200px;
+  padding: 100px;
+  padding-bottom: 10px !important;
+  align-self: center;
+}
+
+#house {
+  margin-left: 30px;
+  height: 200px;
+  width: 200px;
+  padding: 25px;
+  padding-bottom: 9px !important;
+  align-self: center;
+}
+
+#houselink {
+  text-align: center;
+}
+
+.contact {
+  margin-top: 80px;
+  background-color: aliceblue;
+}
+
+.text {
+  text-align: center;
+  padding: 150px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 600px;
+}
+
+.socialmedia text {
+  font-size: 80px;
+}
+
+#clickables img {
+  padding-top: 3px !important;
+  padding: 30px;
+  width: 30px;
+  height: 28px;
+}
+
+#btn img {
+  margin-left: 500px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}

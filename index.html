@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="nav_links">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#" onclick="scrollToSection('.skills')">Skills</a></li>
+                <li><a href="#" onclick="scrollToSection('.projects')">Projects</a></li>
+                <li><a href="#" onclick="scrollToSection('.contact')">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="about">
+        <div class="greetings">
+            <h2>Hello <span id="scrollingText"></span></h2>
+            <br>
+            <h1 id="name">I'm Garikipati Vaishnavi</h1>
+            <br>
+            <br>
+            <p id="intro">
+                I'm a passionate software developer with a keen eye for design and a flair for creating seamless,
+                user-friendly digital experiences.
+            </p>
+            <br>
+            <br>
+            <a id="resume" href="https://drive.google.com/file/d/11NZQuJ1jthK-ix-I7qQrn2SUldExO7QG/view?usp=sharing" target="_blank">Resume</a>
+        </div>
+        <img id="photo" src="/images/Profile.jpg" alt="Image">
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#scrollingText', {
+                strings: ['Collaborator,', 'Tech Enthusiast,', 'Friend,', 'Engineer,'],
+                typeSpeed: 70,
+                backspeed: 60,
+                loop: true
+            });
+        </script>
+    </section>
+
+    <section class="skills">
+        <div class="left">
+            <h1 style="margin-top: 120px; padding: 15px;">My Skills</h1>
+            <p style="padding: 15px;">
+                As a dedicated software developer, I've honed a versatile skill set that empowers me to bring creative
+                visions to life in the digital realm. I am a continuous Leetcode solver.
+                My proficiency spans both front-end and back-end technologies, inlcuding HTML, CSS, JavaScript, Django
+                and a
+                variety of popular frameworks and libraries.
+            </p>
+        </div>
+        <div class="right">
+            <hr style="color: rgb(61, 0, 117); width: 100%">
+            <h2 id="courses">Web Development</h2>
+            <p id="description">
+                My journey starts with designing a web application and being very curious about how to design I created
+                a simple sudoku game.
+            </p>
+            <hr style="color: rgb(61, 0, 117); width: 100%;">
+            <h2 id="courses">Cyber Security</h2>
+            <p id="description">
+                Understanding the various domains and technologies, I wondered protecting the data is very crucial and
+                this lead me to dig deep dive in the field of cyber security. I have completed the first two courses in
+                Cyber Security offered by Google and gained some insights.
+            </p>
+            <hr style="color: rgb(61, 0, 117); width: 100%">
+            <h2 id="courses">Machine Learning</h2>
+            In the world of AI, teaching a machine is a bit interesting and dwelving into this, I have contributed my work for house price prediction.
+            <p id="description">
+
+            </p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="column">
+                <h3>Connecting Dots</h3>
+                <img id="project_photos" src="/images/Connecting Dots.jpg" alt="photo">
+                <a href="https://gitlab.com/we_girls_2023/we_1st_proj.git" target="_blank">Source</a>
+            </div>
+            <div class="column">
+                <h3>Weather</h3>
+                <img id="project_photos" src="/images/weather.png" alt="photo">
+                <a href="https://vaishnavi-279.github.io/Weather-application/" target="_blank">Source</a>
+            </div>
+            <div class="column">
+                <h3>House Price Prediction</h3>
+                <img id="house" src="/images/HousePrice.jpg" alt="photo">
+                <a id="houselink" href="https://github.com/Vaishnavi-279/HousePricePrediction" target="_blank">Source</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="text">
+            <h1 style="font-size: 60px;">Let's Connect</h1>
+            <h1 style="font-size: 40px;">Get in touch</h1>
+            <h3 style="font-size: 20px;">Let's Collab and do a project</h3>
+        </div>
+        <div class="socialmedia">
+            <div id="clickables">
+                <a href="mailto:gvaishnavi1425@example.com?subject=Subject%20Here&body=Body%20Text%20Here"
+                    target="_blank"> <img src="/images/mail.png" alt="mail"></a>
+            </div>
+            <div id="clickables">
+                <a href="https://www.linkedin.com/in/garikipati-vaishnavi-94730825a/" target="_blank"> <img
+                        src="/images/linkedin.png" alt="linkedin"></a>
+            </div>
+            <div id="clickables">
+                <a href="https://github.com/Vaishnavi-279" target="_blank"> <img src="/images/github.png"
+                        alt="github"></a>
+            </div>
+            <div id="clickables">
+                <a href="https://twitter.com/intent/tweet?text=Hello,%20Nice%20to%20meet%20you" target="_blank"> <img
+                        src="/images/twitter.avif" alt="twitter"></a>
+            </div>
+            <div id="btn">
+                <a href="#" onclick="scrollToSection('.about')"><img src="/images/scroll.png" alt="scroll"></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
